@@ -14,7 +14,7 @@ N = 10000
 d = 10
 ads_selected = []
 total_reward = 0
-for n in range(0, N):
+for n in range(N):
     ad = random.randrange(d)
     ads_selected.append(ad)
     reward = dataset.values[n, ad]

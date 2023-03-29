@@ -16,10 +16,10 @@ ads_selected = []
 numbers_of_selections = [0] * d
 sums_of_rewards = [0] * d
 total_reward = 0
-for n in range(0, N):
+for n in range(N):
     ad = 0
     max_upper_bound = 0
-    for i in range(0, d):
+    for i in range(d):
         if (numbers_of_selections[i] > 0):
             average_reward = sums_of_rewards[i] / numbers_of_selections[i]
             delta_i = math.sqrt(3/2 * math.log(n + 1) / numbers_of_selections[i])
