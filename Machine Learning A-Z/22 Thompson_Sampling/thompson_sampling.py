@@ -16,10 +16,10 @@ ads_selected = []
 numbers_of_rewards_1 = [0] * d
 numbers_of_rewards_0 = [0] * d
 total_reward = 0
-for n in range(0, N):
+for n in range(N):
     ad = 0
     max_random = 0
-    for i in range(0, d):
+    for i in range(d):
         random_beta = random.betavariate(numbers_of_rewards_1[i] + 1, numbers_of_rewards_0[i] + 1)
         if random_beta > max_random:
             max_random = random_beta
